@@ -1,0 +1,21 @@
+-- 이게 주석, 테이블명 + 항목명 + 항목에 들어갈거, 주석 쓰고 한줄 띄우기
+
+CREATE TABLE "HR"."Member" 
+   (	"MEMID" NUMBER(38,0) NOT NULL ENABLE, 
+	"MEMTEL" VARCHAR2(100), 
+	"MEMname" VARCHAR2(100)
+   )
+
+INSERT INTO "Member" VALUES (4,'100000','eqweqweqweqw')
+
+INSERT INTO "Member" VALUES (5,'100001','eqwewq')
+
+INSERT INTO "Member" VALUES (6,'101010','aesaes')
+
+INSERT INTO "Member" VALUES (7,'1015151','zxfxzc')
+
+SELECT * FROM "Member" -- 모든 컬럼
+
+SELECT MEMID  FROM "Member" -- id만 검색
+
+SELECT MEMID, MEMTEL  FROM "Member" -- id+pw 검색
